@@ -14,6 +14,7 @@
 		AF0EAD9D1FC1AF670039227B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EAD9B1FC1AF670039227B /* LaunchScreen.storyboard */; };
 		AF0EADA81FC1AF670039227B /* FirstOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EADA71FC1AF670039227B /* FirstOneTests.swift */; };
 		AF0EADB31FC1AF670039227B /* FirstOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EADB21FC1AF670039227B /* FirstOneUITests.swift */; };
+		AF0EADC11FC1BCC40039227B /* example.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0EADC01FC1BCC40039227B /* example.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AF0EADAE1FC1AF670039227B /* FirstOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EADB21FC1AF670039227B /* FirstOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOneUITests.swift; sourceTree = "<group>"; };
 		AF0EADB41FC1AF670039227B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0EADC01FC1BCC40039227B /* example.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = example.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AF0EAD991FC1AF670039227B /* Assets.xcassets */,
 				AF0EAD9B1FC1AF670039227B /* LaunchScreen.storyboard */,
 				AF0EAD9E1FC1AF670039227B /* Info.plist */,
+				AF0EADC01FC1BCC40039227B /* example.m */,
 			);
 			path = FirstOne;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					AF0EAD8E1FC1AF670039227B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					AF0EADA21FC1AF670039227B = {
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0EAD951FC1AF670039227B /* ViewController.swift in Sources */,
+				AF0EADC11FC1BCC40039227B /* example.m in Sources */,
 				AF0EAD931FC1AF670039227B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,12 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BT82TYRHLX;
 				INFOPLIST_FILE = FirstOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Boxyz.FirstOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BT82TYRHLX;
 				INFOPLIST_FILE = FirstOne/Info.plist;
